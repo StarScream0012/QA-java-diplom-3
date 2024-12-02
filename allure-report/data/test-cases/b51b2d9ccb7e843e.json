@@ -1,0 +1,129 @@
+{
+  "uid" : "b51b2d9ccb7e843e",
+  "name" : "registrationTest",
+  "fullName" : "RegistrationTest.registrationTest",
+  "historyId" : "aaf7fb5f596eebb25adde0a2bd64c1f2",
+  "time" : {
+    "start" : 1733157699234,
+    "stop" : 1733157718089,
+    "duration" : 18855
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Переход на форму авторизации через кнопку 'Личный кабинет'",
+      "time" : {
+        "start" : 1733157713018,
+        "stop" : 1733157713325,
+        "duration" : 307
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Переход на форму регистрации",
+      "time" : {
+        "start" : 1733157713326,
+        "stop" : 1733157713399,
+        "duration" : 73
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Ввести данные в форму авторизации и нажать 'Зарегистрироваться'",
+      "time" : {
+        "start" : 1733157713400,
+        "stop" : 1733157713768,
+        "duration" : 368
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "creds",
+        "value" : "{password=w99cvx3yb3f1np, name=Lionel, email=emanuel.sawayn@hotmail.com}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Проверка завершения регистрации",
+      "time" : {
+        "start" : 1733157713768,
+        "stop" : 1733157714811,
+        "duration" : 1043
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "RegistrationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "registrationTest"
+  }, {
+    "name" : "suite",
+    "value" : "RegistrationTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4IBFTU3"
+  }, {
+    "name" : "thread",
+    "value" : "4784@DESKTOP-4IBFTU3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b51b2d9ccb7e843e.json",
+  "parameterValues" : [ ]
+}

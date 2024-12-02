@@ -1,0 +1,174 @@
+{
+  "uid" : "62da9a94ff44a7e1",
+  "name" : "loginWithAuthLinkFromRegPage",
+  "fullName" : "LoginTest.loginWithAuthLinkFromRegPage",
+  "historyId" : "e22e388745dc03ac0e5be844c6dd5771",
+  "time" : {
+    "start" : 1733157570055,
+    "stop" : 1733157594364,
+    "duration" : 24309
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Переход на форму авторизации через кнопку 'Личный кабинет'",
+      "time" : {
+        "start" : 1733157589060,
+        "stop" : 1733157589165,
+        "duration" : 105
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Переход на форму регистрации",
+      "time" : {
+        "start" : 1733157589165,
+        "stop" : 1733157589245,
+        "duration" : 80
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Переход на форму авторизации через ссылку 'Войти' на форме регистрации",
+      "time" : {
+        "start" : 1733157589246,
+        "stop" : 1733157589325,
+        "duration" : 79
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Войти и проверить, что авторизация прошла успешно",
+      "time" : {
+        "start" : 1733157589325,
+        "stop" : 1733157591411,
+        "duration" : 2086
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Переход на форму авторизации через кнопку 'Войти в аккаунт'",
+        "time" : {
+          "start" : 1733157589325,
+          "stop" : 1733157590962,
+          "duration" : 1637
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "userData",
+          "value" : "{password=5r6422b2wc85hvn, name=Winter, email=erick.stroman@gmail.com}"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Переход в профиль",
+        "time" : {
+          "start" : 1733157590962,
+          "stop" : 1733157591188,
+          "duration" : 226
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "checkLogoutButtonIsDisplayed",
+        "time" : {
+          "start" : 1733157591188,
+          "stop" : 1733157591411,
+          "duration" : 223
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginWithAuthLinkFromRegPage"
+  }, {
+    "name" : "suite",
+    "value" : "LoginTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4IBFTU3"
+  }, {
+    "name" : "thread",
+    "value" : "4784@DESKTOP-4IBFTU3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "62da9a94ff44a7e1.json",
+  "parameterValues" : [ ]
+}

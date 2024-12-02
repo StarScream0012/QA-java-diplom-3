@@ -1,0 +1,129 @@
+{
+  "uid" : "a9ef735fd60f98eb",
+  "name" : "registrationInvalidPasswordTest",
+  "fullName" : "RegistrationTest.registrationInvalidPasswordTest",
+  "historyId" : "f449f724f6adc9b32cf0107f1a8baba8",
+  "time" : {
+    "start" : 1733157718093,
+    "stop" : 1733157736825,
+    "duration" : 18732
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Переход на форму авторизации через кнопку 'Личный кабинет'",
+      "time" : {
+        "start" : 1733157735744,
+        "stop" : 1733157736044,
+        "duration" : 300
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Переход на форму регистрации",
+      "time" : {
+        "start" : 1733157736044,
+        "stop" : 1733157736112,
+        "duration" : 68
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Ввести данные в форму авторизации и нажать 'Зарегистрироваться'",
+      "time" : {
+        "start" : 1733157736148,
+        "stop" : 1733157736476,
+        "duration" : 328
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "creds",
+        "value" : "{password=S8l8, name=Jasmin, email=scot.schowalter@hotmail.com}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Проверка, что отображается сообщения 'Некорректный пароль'",
+      "time" : {
+        "start" : 1733157736476,
+        "stop" : 1733157736503,
+        "duration" : 27
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "RegistrationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "registrationInvalidPasswordTest"
+  }, {
+    "name" : "suite",
+    "value" : "RegistrationTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4IBFTU3"
+  }, {
+    "name" : "thread",
+    "value" : "4784@DESKTOP-4IBFTU3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a9ef735fd60f98eb.json",
+  "parameterValues" : [ ]
+}

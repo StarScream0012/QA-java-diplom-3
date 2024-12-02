@@ -1,0 +1,144 @@
+{
+  "uid" : "d86d0293b96fecc9",
+  "name" : "loginWithAccountButton",
+  "fullName" : "LoginTest.loginWithAccountButton",
+  "historyId" : "aa4834a8045c15e9558de90858aa3421",
+  "time" : {
+    "start" : 1733157553697,
+    "stop" : 1733157569944,
+    "duration" : 16247
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Переход на форму авторизации через кнопку 'Личный кабинет'",
+      "time" : {
+        "start" : 1733157566156,
+        "stop" : 1733157566309,
+        "duration" : 153
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Войти и проверить, что авторизация прошла успешно",
+      "time" : {
+        "start" : 1733157566310,
+        "stop" : 1733157567602,
+        "duration" : 1292
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Переход на форму авторизации через кнопку 'Войти в аккаунт'",
+        "time" : {
+          "start" : 1733157566312,
+          "stop" : 1733157567364,
+          "duration" : 1052
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "userData",
+          "value" : "{password=251863uvj0m8e2b, name=Jamar, email=cristopher.corkery@hotmail.com}"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "Переход в профиль",
+        "time" : {
+          "start" : 1733157567364,
+          "stop" : 1733157567420,
+          "duration" : 56
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "checkLogoutButtonIsDisplayed",
+        "time" : {
+          "start" : 1733157567420,
+          "stop" : 1733157567601,
+          "duration" : 181
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginWithAccountButton"
+  }, {
+    "name" : "suite",
+    "value" : "LoginTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4IBFTU3"
+  }, {
+    "name" : "thread",
+    "value" : "4784@DESKTOP-4IBFTU3.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d86d0293b96fecc9.json",
+  "parameterValues" : [ ]
+}
