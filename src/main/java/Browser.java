@@ -6,15 +6,15 @@ public class Browser {
     public WebDriver getWebDriver(String browserName){
         ChromeOptions options = new ChromeOptions();
         //Run теста без запуска браузера
-        // options.addArguments("--no-sandbox", "--headless", "--disable-dev-shm-usage");
+        options.addArguments("--no-sandbox", "--headless", "--disable-dev-shm-usage");
         switch (browserName){
             default:
             case "chrome":
-                options.setBinary("C:/chrome2/chrome-win64/chrome.exe");
                 return new ChromeDriver(options);
             case "yandex":
-                System.setProperty("webdriver.chrome.driver", "C:/chromedriver/chromedriver.exe/");
-                options.setBinary("C:/Users/Admin/AppData/Local/Yandex/YandexBrowser/Application/browser.exe");
+                System.setProperty("webdriver.chrome.driver", System.getenv("CHROMEDRIVER_PATH"));
+                String yandexPath = System.getenv("YANDEX_BROWSER_PATH");
+                options.setBinary(yandexPath);
                 return new ChromeDriver(options);
         }
 

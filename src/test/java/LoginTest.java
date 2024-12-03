@@ -5,14 +5,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pageObject.AccountPage;
-import pageObject.LoginPage;
-import pageObject.RegistrationPage;
-import pageObject.ResetPasswordPage;
+import page.object.*;
 
 import java.time.Duration;
 import java.util.HashMap;
@@ -29,9 +24,10 @@ public class LoginTest {
     @Before
     public void setUp(){
         Browser browser=new Browser();
-        driver = browser.getWebDriver("yandex");
+        String browserName = System.getenv("BROWSER");
+        driver = browser.getWebDriver(browserName);
         // переход на страницу тестового приложения
-        driver.get("https://stellarburgers.nomoreparties.site/");
+        driver.get(PageURL.MAIN_URL);
 
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
@@ -42,16 +38,19 @@ public class LoginTest {
         userData= ApiHelper.getNewUser();
     }
     @Test
+    @Description("Вход по кнопке 'Войти в аккаунт'")
     public void loginWithAuthButton(){
         objLoginPage.clickAuthButton();
         loginAndCheckLoggedIn();
     }
     @Test
+    @Description("Вход по кнопке 'Личный кабинет'")
     public void loginWithAccountButton(){
         objLoginPage.goToAuthByAccountButton();
         loginAndCheckLoggedIn();
     }
     @Test
+    @Description("Вход по ссылке 'Войти' на форме регистрации")
     public void loginWithAuthLinkFromRegPage(){
         objLoginPage.goToAuthByAccountButton();
         objLoginPage.openRegistrationPage();
@@ -59,6 +58,7 @@ public class LoginTest {
         loginAndCheckLoggedIn();
     }
     @Test
+    @Description("Вход по ссылке 'Войти' на форме восстановления пароля")
     public void loginWithAuthLinkFromResetPasswordPage(){
         objLoginPage.goToAuthByAccountButton();
         objLoginPage.openResetPasswordPage();
@@ -66,6 +66,7 @@ public class LoginTest {
         loginAndCheckLoggedIn();
     }
     @Test
+    @Description("Выход из аккаунта")
     public void logoutTest(){
         objLoginPage.goToAuthByAccountButton();
         loginAndCheckLoggedIn();
@@ -84,11 +85,13 @@ public class LoginTest {
     public void checkLoggedOut()
     {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        wait.until(ExpectedConditions.urlToBe("https://stellarburgers.nomoreparties.site/login"));
+        wait.until(ExpectedConditions.urlToBe(PageURL.LOGIN_URL));
     }
     @After
+    @Step("Удалить пользователя")
     public void deleteUser(){
         ApiHelper.deleteUser(userData);
         driver.quit();
     }
 }
+

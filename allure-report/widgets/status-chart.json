@@ -1,100 +1,100 @@
 [ {
-  "uid" : "501f09e7995d434a",
-  "name" : "openFillingMenuTab",
-  "time" : {
-    "start" : 1733157671038,
-    "stop" : 1733157682640,
-    "duration" : 11602
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b6c690ff14a74ac",
-  "name" : "logoutTest",
-  "time" : {
-    "start" : 1733157594368,
-    "stop" : 1733157644349,
-    "duration" : 49981
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b51b2d9ccb7e843e",
-  "name" : "registrationTest",
-  "time" : {
-    "start" : 1733157699234,
-    "stop" : 1733157718089,
-    "duration" : 18855
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4afc36701f803f92",
-  "name" : "openBunsMenuTab",
-  "time" : {
-    "start" : 1733157682643,
-    "stop" : 1733157690652,
-    "duration" : 8009
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "358117ffb534bf15",
-  "name" : "openSauceMenuTab",
-  "time" : {
-    "start" : 1733157690655,
-    "stop" : 1733157699231,
-    "duration" : 8576
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5ae8b381e4fc671c",
-  "name" : "loginWithAuthLinkFromResetPasswordPage",
-  "time" : {
-    "start" : 1733157660508,
-    "stop" : 1733157671017,
-    "duration" : 10509
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "87c106b3e225a7d6",
-  "name" : "loginWithAuthButton",
-  "time" : {
-    "start" : 1733157644356,
-    "stop" : 1733157660505,
-    "duration" : 16149
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a9ef735fd60f98eb",
+  "uid" : "848dd021bfff4f6a",
   "name" : "registrationInvalidPasswordTest",
   "time" : {
-    "start" : 1733157718093,
-    "stop" : 1733157736825,
-    "duration" : 18732
+    "start" : 1733247954863,
+    "stop" : 1733247987324,
+    "duration" : 32461
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "62da9a94ff44a7e1",
+  "uid" : "d8ec9d48cbfb58a7",
+  "name" : "logoutTest",
+  "time" : {
+    "start" : 1733247716640,
+    "stop" : 1733247754955,
+    "duration" : 38315
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "28a2c81bb8d94478",
+  "name" : "openFillingMenuTab",
+  "time" : {
+    "start" : 1733247783625,
+    "stop" : 1733247826600,
+    "duration" : 42975
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1766d27167bb58a8",
+  "name" : "loginWithAuthLinkFromResetPasswordPage",
+  "time" : {
+    "start" : 1733247769252,
+    "stop" : 1733247783614,
+    "duration" : 14362
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "deb1af14293d1043",
+  "name" : "loginWithAuthButton",
+  "time" : {
+    "start" : 1733247754961,
+    "stop" : 1733247769249,
+    "duration" : 14288
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "35f829e81c897b24",
+  "name" : "openSauceMenuTab",
+  "time" : {
+    "start" : 1733247869095,
+    "stop" : 1733247907654,
+    "duration" : 38559
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "819cbd0dc7b4037",
   "name" : "loginWithAuthLinkFromRegPage",
   "time" : {
-    "start" : 1733157570055,
-    "stop" : 1733157594364,
-    "duration" : 24309
+    "start" : 1733247601123,
+    "stop" : 1733247716636,
+    "duration" : 115513
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "d86d0293b96fecc9",
+  "uid" : "887d47a1ddcc208a",
+  "name" : "registrationTest",
+  "time" : {
+    "start" : 1733247907658,
+    "stop" : 1733247954860,
+    "duration" : 47202
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8f3016ea1536cb99",
+  "name" : "openBunsMenuTab",
+  "time" : {
+    "start" : 1733247826604,
+    "stop" : 1733247869092,
+    "duration" : 42488
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "12fe197bdb0c4387",
   "name" : "loginWithAccountButton",
   "time" : {
-    "start" : 1733157553697,
-    "stop" : 1733157569944,
-    "duration" : 16247
+    "start" : 1733247579813,
+    "stop" : 1733247601047,
+    "duration" : 21234
   },
   "status" : "passed",
   "severity" : "normal"

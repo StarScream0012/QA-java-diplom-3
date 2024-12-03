@@ -1,4 +1,4 @@
-package pageObject;
+package page.object;
 
 import io.qameta.allure.Step;
 import org.junit.Assert;
@@ -33,12 +33,12 @@ public class RegistrationPage {
     public void clickAuthLink(){
         driver.findElement(authLink).click();
         String currentURL = driver.getCurrentUrl();
-        Assert.assertEquals("https://stellarburgers.nomoreparties.site/login",currentURL);
+        Assert.assertEquals(PageURL.LOGIN_URL,currentURL);
     }
     @Step("Проверка завершения регистрации")
     public void verifyRegistered(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
-        wait.until(ExpectedConditions.urlToBe("https://stellarburgers.nomoreparties.site/login"));
+        wait.until(ExpectedConditions.urlToBe(PageURL.LOGIN_URL));
     }
     @Step("Проверка, что отображается сообщения 'Некорректный пароль'")
     public void checkInvalidPasswordMessageAppears() {

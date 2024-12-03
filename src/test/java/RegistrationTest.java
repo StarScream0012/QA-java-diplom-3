@@ -1,12 +1,12 @@
 import api.ApiHelper;
+import io.qameta.allure.Description;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import pageObject.LoginPage;
-import pageObject.RegistrationPage;
+import page.object.LoginPage;
+import page.object.PageURL;
+import page.object.RegistrationPage;
 
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
@@ -18,14 +18,16 @@ public class RegistrationTest {
     @Before
     public void setUp(){
         Browser browser=new Browser();
-        driver = browser.getWebDriver("yandex");
+        String browserName = System.getenv("BROWSER");
+        driver = browser.getWebDriver(browserName);
         // переход на страницу тестового приложения
-        driver.get("https://stellarburgers.nomoreparties.site/");
+        driver.get(PageURL.MAIN_URL);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         objLoginPage=new LoginPage(driver);
         objRegPage = new RegistrationPage(driver);
     }
     @Test
+    @Description("Проверка регистрации")
     public void registrationTest(){
         objLoginPage.goToAuthByAccountButton();
         objLoginPage.openRegistrationPage();
@@ -36,6 +38,7 @@ public class RegistrationTest {
         ApiHelper.deleteUser(userData);
     }
     @Test
+    @Description("Проверка регистрации с неправильным паролем")
     public void registrationInvalidPasswordTest(){
         objLoginPage.goToAuthByAccountButton();
         objLoginPage.openRegistrationPage();

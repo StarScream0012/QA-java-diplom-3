@@ -1,4 +1,4 @@
-package pageObject;
+package page.object;
 
 import io.qameta.allure.Step;
 import org.junit.Assert;
@@ -15,6 +15,6 @@ public class ResetPasswordPage {
     public void clickAuthLink(){
         driver.findElement(authLink).click();
         String currentURL = driver.getCurrentUrl();
-        Assert.assertEquals("https://stellarburgers.nomoreparties.site/login",currentURL);
+        Assert.assertEquals(PageURL.LOGIN_URL,currentURL);
     }
 }

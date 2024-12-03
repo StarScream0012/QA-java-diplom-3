@@ -1,4 +1,4 @@
-package pageObject;
+package page.object;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
@@ -16,11 +16,11 @@ public class AccountPage {
     }
     By logoutButton =  By.xpath("//button[contains(text(),'Выход')]");
 
-    @Step
+    @Step("Проверка, что отображена кнопка выхода")
     public void checkLogoutButtonIsDisplayed(){
         driver.findElement(logoutButton).isDisplayed();
     }
-    @Step
+    @Step("Нажать кнопку 'Выход'")
     public void clickLogoutButton(){
         driver.findElement(logoutButton).click();
     }

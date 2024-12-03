@@ -1,4 +1,4 @@
-package pageObject;
+package page.object;
 
 import io.qameta.allure.Step;
 import org.junit.Assert;

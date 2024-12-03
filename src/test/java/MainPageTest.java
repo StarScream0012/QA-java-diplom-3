@@ -1,18 +1,11 @@
-import api.ApiHelper;
 import io.qameta.allure.Description;
-import io.qameta.allure.Step;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import pageObject.AccountPage;
-import pageObject.LoginPage;
-import pageObject.MainPage;
-import pageObject.RegistrationPage;
+import page.object.MainPage;
+import page.object.PageURL;
 
-import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 public class MainPageTest {
@@ -21,13 +14,15 @@ public class MainPageTest {
     @Before
     public void setUp(){
         Browser browser=new Browser();
-        driver = browser.getWebDriver("yandex");
+        String browserName = System.getenv("BROWSER");
+        driver = browser.getWebDriver(browserName);
         // переход на страницу тестового приложения
-        driver.get("https://stellarburgers.nomoreparties.site/");
+        driver.get(PageURL.MAIN_URL);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         objMainPage=new MainPage(driver);
     }
     @Test
+    @Description("Открыть панель 'Булки'")
     public void openBunsMenuTab(){
         objMainPage.clickConstructorLink();
         objMainPage.checkBunsTabOpened();
@@ -37,12 +32,14 @@ public class MainPageTest {
         objMainPage.checkBunsTabOpened();
     }
     @Test
+    @Description("Открыть панель 'Соусы'")
     public void openSauceMenuTab(){
         objMainPage.clickConstructorLink();
         objMainPage.openSauceTab();
         objMainPage.checkSauceTabOpened();
     }
     @Test
+    @Description("Открыть панель 'Начинка'")
     public void openFillingMenuTab(){
         objMainPage.clickConstructorLink();
         objMainPage.openFillingTab();

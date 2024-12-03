@@ -1,11 +1,10 @@
 package api;
 
-import io.restassured.mapper.ObjectMapperType;
 import net.datafaker.Faker;
 import io.restassured.response.Response;
-import requestModel.CreateUserModel;
+import request.model.CreateUserModel;
 import io.restassured.RestAssured;
-import requestModel.LoginModel;
+import request.model.LoginModel;
 
 import java.util.HashMap;
 
@@ -18,7 +17,7 @@ public class ApiHelper {
     private static Faker faker = new Faker();
 
     public static HashMap getNewUser(){
-        RestAssured.baseURI = API.baseURI;
+        RestAssured.baseURI = API.BASE_URI;
         String email = faker.internet().emailAddress();
         String password = faker.internet().password();
         String name =faker.name().firstName();
@@ -27,7 +26,7 @@ public class ApiHelper {
                 .header("Content-type", "application/json")
                 .body(createUserModel)
                 .when()
-                .post(API.registerURI);
+                .post(API.REGISTER_URI);
         response.then().assertThat().body("success", equalTo(true))
                 .and().statusCode(200);
         HashMap userData = new HashMap<>();
@@ -47,13 +46,13 @@ public class ApiHelper {
         return userData;
     }
     public static String getAccessToken(HashMap<String,String> userData){
-        RestAssured.baseURI = API.baseURI;
+        RestAssured.baseURI = API.BASE_URI;
         LoginModel loginModel=new LoginModel(userData.get("email"),userData.get("password"));
         Response response = given()
                 .header("Content-type", "application/json")
                 .body(loginModel)
                 .when()
-                .post(API.loginURI);
+                .post(API.LOGIN_URI);
         response.then().assertThat().body("success", equalTo(true))
                 .statusCode(200);
         return response.path("accessToken");
@@ -64,7 +63,7 @@ public class ApiHelper {
                 .header("Content-type", "application/json")
                 .header("Authorization", accessToken)
                 .when()
-                .delete(API.userURI);
+                .delete(API.USER_URI);
         response.then().assertThat().statusCode(202);
     }
 }
